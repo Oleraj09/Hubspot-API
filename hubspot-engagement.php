@@ -1,10 +1,17 @@
 <?php
 /**
  * Plugin Name: Hubspot Engagements
+ * Plugin URI: https://github.com/Oleraj09/Hubspot-API
  * Description: Hubspot Email sending and track metadata. After completing order.
  * Version: 1.0
- * Author: XXXX
+ * Author: Oleraj Hossin
+ * Author URI: https://olerajhossin.xyz
+ * Text Domain: CHubspot Engagements
  */
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
+}
+
 // Register Plugin menu under setting of wordpress defaul setting menu
 add_action('admin_menu', 'mhg_add_plugin_settings_submenu');
 function mhg_add_plugin_settings_submenu() {
